@@ -5,6 +5,7 @@ const nextConfig = {
   output: 'export',
   basePath: isProd ? '/Creative' : '',
   assetPrefix: isProd ? '/Creative/' : '',
+  trailingSlash: true,
   images: {
     formats: ['image/avif', 'image/webp'],
     remotePatterns: [
