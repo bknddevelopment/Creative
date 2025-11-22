@@ -21,10 +21,10 @@ export function ServiceTiers() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <h2 className="text-display-2 font-bold mb-4">
-            Choose Your Path to Success
+            Comprehensive Project & Operations Services
           </h2>
           <p className="text-lg text-gray-600">
-            Flexible service tiers designed to match your ambitions and budget
+            From strategic planning to operational excellence, we deliver solutions tailored to your needs
           </p>
         </motion.div>
 
@@ -33,7 +33,7 @@ export function ServiceTiers() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
-          className="grid md:grid-cols-3 gap-8"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto"
         >
           {serviceTiers.map((tier, index) => (
             <motion.div
@@ -44,10 +44,10 @@ export function ServiceTiers() {
               <Card
                 className={cn(
                   "relative h-full transition-all duration-300 hover:scale-105 hover:shadow-xl",
-                  index === 2 && "border-brand-green border-2"
+                  index === 4 && "border-brand-green border-2"
                 )}
               >
-                {index === 2 && (
+                {index === 4 && (
                   <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-green text-white px-4 py-1 rounded-full text-sm font-medium">
                     Most Popular
                   </div>

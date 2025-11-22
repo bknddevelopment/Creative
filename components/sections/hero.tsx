@@ -61,7 +61,7 @@ export function Hero() {
         >
           <motion.div variants={fadeUp} className="mb-6">
             <span className="inline-block px-4 py-2 bg-brand-coral/10 text-brand-coral rounded-full text-sm font-medium">
-              Strategy → Design → Success
+              Plan → Execute → Deliver
             </span>
           </motion.div>
 
@@ -69,17 +69,17 @@ export function Hero() {
             variants={fadeUp}
             className="text-display-1 font-bold mb-6 leading-tight"
           >
-            Creative Solutions,
+            Project Excellence,
             <br />
-            <span className="text-gradient">Sincere Results</span>
+            <span className="text-gradient">Operational Clarity</span>
           </motion.h1>
 
           <motion.p
             variants={fadeUp}
             className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto"
           >
-            We transform ambitious ideas into exceptional digital experiences.
-            From strategy to execution, we&apos;re your creative partner for growth.
+            We transform complex initiatives into successful outcomes.
+            From blueprint to launch, we&apos;re your partner in project and operations excellence.
           </motion.p>
 
           <motion.div
@@ -87,10 +87,10 @@ export function Hero() {
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
             <Button size="xl" variant="gradient">
-              Start Your Project
+              Get Your Blueprint
             </Button>
             <Button size="xl" variant="outline">
-              View Our Work
+              Explore Services
             </Button>
           </motion.div>
 
@@ -101,20 +101,20 @@ export function Hero() {
           >
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div>
-                <div className="text-3xl font-bold text-brand-coral">50+</div>
-                <div className="text-sm text-gray-600">Happy Clients</div>
+                <div className="text-3xl font-bold text-brand-coral">150+</div>
+                <div className="text-sm text-gray-600">Projects Delivered</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-brand-purple">100+</div>
-                <div className="text-sm text-gray-600">Projects Completed</div>
+                <div className="text-3xl font-bold text-brand-purple">98%</div>
+                <div className="text-sm text-gray-600">On-Time Delivery</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-brand-green">5+</div>
-                <div className="text-sm text-gray-600">Years Experience</div>
+                <div className="text-3xl font-bold text-brand-green">6+</div>
+                <div className="text-sm text-gray-600">Years Excellence</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-brand-blue">15+</div>
-                <div className="text-sm text-gray-600">Team Members</div>
+                <div className="text-3xl font-bold text-brand-blue">$50M+</div>
+                <div className="text-sm text-gray-600">Projects Managed</div>
               </div>
             </div>
           </motion.div>

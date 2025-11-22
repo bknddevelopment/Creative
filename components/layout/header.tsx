@@ -38,12 +38,12 @@ export function Header() {
           >
             <div className="relative">
               <div className="w-10 h-10 bg-brand-coral rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
+                <span className="text-white font-bold text-xl">P</span>
               </div>
               <div className="absolute inset-0 bg-gradient-to-r from-brand-coral via-brand-purple to-brand-green rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <span className="font-bold text-xl hidden sm:inline-block">
-              Sincerely Creative
+              project
             </span>
           </Link>
           <Navigation />

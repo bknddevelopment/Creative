@@ -19,11 +19,11 @@ export default function AboutPage() {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h1 className="text-display-2 font-bold mb-4">
-            About <span className="text-gradient">Sincerely Creative</span>
+            About <span className="text-gradient">project</span>
           </h1>
           <p className="text-xl text-gray-600">
-            We&apos;re a collective of strategists, designers, and developers passionate about
-            creating meaningful digital experiences that drive real business results.
+            We&apos;re a team of project managers, operations specialists, and strategic consultants passionate about
+            transforming complex initiatives into successful outcomes that drive measurable results.
           </p>
         </motion.div>
 
@@ -38,13 +38,13 @@ export default function AboutPage() {
           <div>
             <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
             <p className="text-gray-600 mb-4">
-              To bridge the gap between creative excellence and strategic thinking, delivering
-              solutions that not only look exceptional but drive measurable business growth.
+              To simplify complexity through expert project management and operational excellence, delivering
+              solutions that transform ambitious initiatives into measurable success.
             </p>
             <p className="text-gray-600">
-              We believe in the power of sincere partnerships, transparent communication, and
-              creative solutions that stand the test of time. Every project is an opportunity
-              to push boundaries and exceed expectations.
+              We believe in the power of structured processes, transparent communication, and
+              strategic execution. Every project is an opportunity to demonstrate how proper
+              planning and management drives exceptional outcomes.
             </p>
           </div>
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
@@ -71,27 +71,27 @@ export default function AboutPage() {
               <div className="w-16 h-16 bg-brand-coral/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🎯</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Strategic Focus</h3>
+              <h3 className="text-xl font-semibold mb-2">Results-Driven</h3>
               <p className="text-gray-600">
-                Every design decision is backed by data and aligned with your business objectives.
+                Every decision is backed by data and aligned with measurable project outcomes.
               </p>
             </motion.div>
             <motion.div variants={staggerItem} className="text-center">
               <div className="w-16 h-16 bg-brand-purple/10 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <span className="text-2xl">✨</span>
+                <span className="text-2xl">⚡</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Creative Excellence</h3>
+              <h3 className="text-xl font-semibold mb-2">Operational Excellence</h3>
               <p className="text-gray-600">
-                We push creative boundaries while maintaining usability and accessibility.
+                We optimize processes and workflows to deliver maximum efficiency and quality.
               </p>
             </motion.div>
             <motion.div variants={staggerItem} className="text-center">
               <div className="w-16 h-16 bg-brand-green/10 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <span className="text-2xl">🤝</span>
               </div>
-              <h3 className="text-xl font-semibold mb-2">Sincere Partnership</h3>
+              <h3 className="text-xl font-semibold mb-2">True Partnership</h3>
               <p className="text-gray-600">
-                Your success is our success. We work as an extension of your team.
+                Your success is our success. We integrate seamlessly as an extension of your team.
               </p>
             </motion.div>
           </div>
@@ -170,18 +170,18 @@ export default function AboutPage() {
           className="text-center py-16 bg-gradient-to-r from-brand-coral/10 via-brand-purple/10 to-brand-green/10 rounded-2xl"
         >
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Create Together?
+            Ready to Work Together?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Join the growing list of brands that trust us with their creative vision.
-            Let&apos;s build something extraordinary.
+            Join the organizations that trust us with their most critical initiatives.
+            Let&apos;s turn your vision into reality.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="gradient">
-              Start a Project
+              Get Your Blueprint
             </Button>
             <Button size="lg" variant="outline">
-              Schedule a Call
+              Schedule a Consultation
             </Button>
           </div>
         </motion.div>

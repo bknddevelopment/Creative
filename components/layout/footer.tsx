@@ -11,12 +11,12 @@ export function Footer() {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <div className="w-10 h-10 bg-brand-coral rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xl">S</span>
+                <span className="text-white font-bold text-xl">P</span>
               </div>
-              <span className="font-bold text-xl">Sincerely Creative</span>
+              <span className="font-bold text-xl">project</span>
             </div>
             <p className="text-gray-400 max-w-sm">
-              Strategic design and full-service creative solutions that transform brands and drive results.
+              Expert project management, operations, and strategic solutions that transform complex initiatives into successful outcomes.
             </p>
           </div>
 
@@ -43,10 +43,10 @@ export function Footer() {
             <ul className="space-y-2 text-gray-400">
               <li>
                 <a
-                  href="mailto:hello@sincerelycreative.com"
+                  href="mailto:hello@project.com"
                   className="hover:text-brand-coral transition-colors"
                 >
-                  hello@sincerelycreative.com
+                  hello@project.com
                 </a>
               </li>
               <li>+1 (555) 123-4567</li>

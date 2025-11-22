@@ -41,8 +41,8 @@ export default function ServicesPage() {
             Our <span className="text-gradient">Services</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Comprehensive creative solutions tailored to your business needs.
-            Choose the perfect tier for your growth journey.
+            Expert project management and operations solutions designed to transform complex initiatives into successful outcomes.
+            From strategic blueprints to full operational support.
           </p>
         </motion.div>
 
@@ -51,7 +51,7 @@ export default function ServicesPage() {
           variants={staggerContainer}
           initial="initial"
           animate="animate"
-          className="grid md:grid-cols-3 gap-8 mb-24"
+          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24 max-w-7xl mx-auto"
         >
           {serviceTiers.map((tier) => (
             <motion.div key={tier.id} variants={staggerItem}>
@@ -62,6 +62,7 @@ export default function ServicesPage() {
                       ${tier.color === "brand-blue" && "bg-brand-blue"}
                       ${tier.color === "brand-purple" && "bg-brand-purple"}
                       ${tier.color === "brand-green" && "bg-brand-green"}
+                      ${tier.color === "brand-coral" && "bg-brand-coral"}
                     `}
                   >
                     {tier.name.charAt(0)}
@@ -74,8 +75,16 @@ export default function ServicesPage() {
                   </div>
                 </CardHeader>
                 <CardContent>
-                  <Button className="w-full" variant={tier.id === "full-service" ? "gradient" : "outline"}>
-                    Get Started
+                  <ul className="space-y-2 mb-6">
+                    {tier.features.slice(0, 6).map((feature, idx) => (
+                      <li key={idx} className="flex items-start text-sm text-gray-600">
+                        <Check className="w-4 h-4 mr-2 flex-shrink-0 mt-0.5 text-brand-green" />
+                        <span>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Button className="w-full" variant={tier.id === "operations-partner" ? "gradient" : "outline"}>
+                    Learn More
                   </Button>
                 </CardContent>
               </Card>
@@ -83,77 +92,46 @@ export default function ServicesPage() {
           ))}
         </motion.div>
 
-        {/* Comparison Table */}
+        {/* Our Approach Section */}
         <motion.div
           variants={fadeUp}
           initial="initial"
           whileInView="animate"
           viewport={{ once: true }}
+          className="mb-24"
         >
           <h2 className="text-3xl font-bold text-center mb-12">
-            Detailed Feature Comparison
+            Our Approach to Excellence
           </h2>
 
-          <div className="overflow-x-auto">
-            <table className="w-full">
-              <thead>
-                <tr className="border-b">
-                  <th className="text-left py-4 px-4">Features</th>
-                  <th className="text-center py-4 px-4">
-                    <div className="text-brand-blue font-semibold">Strategy First</div>
-                    <div className="text-sm text-gray-600">$2,500</div>
-                  </th>
-                  <th className="text-center py-4 px-4">
-                    <div className="text-brand-purple font-semibold">Design Forward</div>
-                    <div className="text-sm text-gray-600">$5,000</div>
-                  </th>
-                  <th className="text-center py-4 px-4">
-                    <div className="text-brand-green font-semibold">Full Service</div>
-                    <div className="text-sm text-gray-600">$10,000+</div>
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                {detailedFeatures.map((feature, index) => (
-                  <tr key={index} className="border-b hover:bg-gray-50">
-                    <td className="py-4 px-4 font-medium">{feature.name}</td>
-                    <td className="text-center py-4 px-4">
-                      {typeof feature.strategy === "boolean" ? (
-                        feature.strategy ? (
-                          <Check className="w-5 h-5 text-brand-green mx-auto" />
-                        ) : (
-                          <X className="w-5 h-5 text-gray-300 mx-auto" />
-                        )
-                      ) : (
-                        <span className="text-sm text-gray-600">{feature.strategy}</span>
-                      )}
-                    </td>
-                    <td className="text-center py-4 px-4">
-                      {typeof feature.design === "boolean" ? (
-                        feature.design ? (
-                          <Check className="w-5 h-5 text-brand-green mx-auto" />
-                        ) : (
-                          <X className="w-5 h-5 text-gray-300 mx-auto" />
-                        )
-                      ) : (
-                        <span className="text-sm text-gray-600">{feature.design}</span>
-                      )}
-                    </td>
-                    <td className="text-center py-4 px-4">
-                      {typeof feature.fullService === "boolean" ? (
-                        feature.fullService ? (
-                          <Check className="w-5 h-5 text-brand-green mx-auto" />
-                        ) : (
-                          <X className="w-5 h-5 text-gray-300 mx-auto" />
-                        )
-                      ) : (
-                        <span className="text-sm text-gray-600">{feature.fullService}</span>
-                      )}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="text-center">
+              <div className="w-16 h-16 bg-brand-coral/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">📋</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Discovery & Planning</h3>
+              <p className="text-gray-600">
+                We start by understanding your goals, challenges, and requirements to create a comprehensive project blueprint.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-brand-purple/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">⚡</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Execution & Management</h3>
+              <p className="text-gray-600">
+                Expert project managers guide every phase, ensuring on-time delivery and exceptional quality throughout.
+              </p>
+            </div>
+            <div className="text-center">
+              <div className="w-16 h-16 bg-brand-green/10 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <span className="text-3xl">🎯</span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2">Launch & Support</h3>
+              <p className="text-gray-600">
+                From go-live to post-launch optimization, we ensure smooth transitions and sustained success.
+              </p>
+            </div>
           </div>
         </motion.div>
 
@@ -166,17 +144,17 @@ export default function ServicesPage() {
           className="text-center mt-24 py-16 bg-gradient-to-r from-brand-coral/10 via-brand-purple/10 to-brand-green/10 rounded-2xl"
         >
           <h2 className="text-3xl font-bold mb-4">
-            Ready to Transform Your Brand?
+            Ready to Transform Your Project?
           </h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Let&apos;s discuss your project and find the perfect solution for your business goals.
+            Let&apos;s discuss your initiative and create a customized solution that drives results.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" variant="gradient">
-              Schedule Consultation
+              Get Your Blueprint
             </Button>
             <Button size="lg" variant="outline">
-              Download Service Guide
+              Schedule Consultation
             </Button>
           </div>
         </motion.div>
