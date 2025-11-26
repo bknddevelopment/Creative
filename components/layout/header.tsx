@@ -37,10 +37,10 @@ export function Header() {
             className="flex items-center space-x-2 group"
           >
             <div className="relative">
-              <div className="w-10 h-10 bg-brand-coral rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#1a1a1a] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-xl">P</span>
               </div>
-              <div className="absolute inset-0 bg-gradient-to-r from-brand-coral via-brand-purple to-brand-green rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-[#333] rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </div>
             <span className="font-bold text-xl hidden sm:inline-block">
               project

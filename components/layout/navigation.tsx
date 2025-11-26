@@ -23,28 +23,15 @@ export function Navigation() {
               key={item.href}
               href={item.href}
               className={cn(
-                "relative text-sm font-medium transition-colors hover:text-brand-coral",
-                isActive ? "text-brand-coral" : "text-gray-700"
+                "relative text-sm font-medium transition-colors bg-gray-200 text-black px-3 py-1.5 rounded-full hover:bg-gray-300",
+                isActive ? "bg-gray-300" : "bg-gray-200"
               )}
             >
               {item.name}
-              {isActive && (
-                <motion.div
-                  layoutId="navbar-indicator"
-                  className="absolute -bottom-1 left-0 right-0 h-0.5 bg-brand-coral"
-                  animate={{ opacity: 1 }}
-                  initial={{ opacity: 0 }}
-                  transition={{
-                    type: "spring",
-                    stiffness: 500,
-                    damping: 30,
-                  }}
-                />
-              )}
             </Link>
           )
         })}
-        <Button size="sm" variant="gradient">
+        <Button size="sm" className="bg-gray-200 text-black hover:bg-gray-300">
           Get Started
         </Button>
       </nav>
@@ -87,15 +74,15 @@ export function Navigation() {
                 href={item.href}
                 onClick={() => setIsOpen(false)}
                 className={cn(
-                  "text-2xl font-medium transition-colors hover:text-brand-coral py-2",
-                  isActive ? "text-brand-coral" : "text-gray-700"
+                  "text-2xl font-medium transition-colors bg-gray-200 text-black px-4 py-2 rounded-full hover:bg-gray-300 inline-block",
+                  isActive ? "bg-gray-300" : "bg-gray-200"
                 )}
               >
                 {item.name}
               </Link>
             )
           })}
-          <Button size="lg" variant="gradient" className="mt-8 w-full">
+          <Button size="lg" className="mt-8 w-full bg-gray-200 text-black hover:bg-gray-300">
             Get Started
           </Button>
         </nav>
